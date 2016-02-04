@@ -2,10 +2,28 @@
      A*Create a database file in which the primary key is the province ID.
      A          R CANADAPROV                TEXT('Canadian provinces')
      A            PROVNUMBER     2S 0       COLHDG('PROVINCE' 'NUMBER')
+
+     A*Variable: Name of the province (15 alphabetic characters).
      A            PROVNAME      15          COLHDG('PROVINCE NAME')
+
+     A*Decimal variable: The provincial population.
      A            POPULATION     8S 0       COLHDG('POPULATION')
+
+     A*Decimal variable with no decimals: Year of foundation.
      A            YEARFOUND      4S 0       COLHDG('FOUNDATION' 'YEAR')
+
+     A*Length of 30 characters: name of the Premier.
      A            PREMIER       30A         COLHDG('PREMIER')
+
+     A*Length of 15 characters: Provincial capital city.
      A            CAPITAL       15A         COLHDG('PROVINCIAL' 'CAPITAL CITY')
+
+     A**Decimal variable and 0 decimals: Year of admission in Canada.
      A            ADMISSION      4S 0       COLHDG('ADMISSION' 'IN FEDERATION')
+
+     A*Variable PRIDINGS: Holds the number of provincial ridings.
+     A            PRIDINGS       3S 0       COLHDG('# PROVINCIAL' 'RIDINGS')
+
+     A*Variable FRIDINGS: Holds the number of federal ridings.
+     A            FRIDINGS       3S 0       COLHDG('# FEDERAL' 'RIDINGS')
      A          K PROVNUMBER 
