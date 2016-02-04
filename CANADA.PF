@@ -1,0 +1,11 @@
+     A                                      UNIQUE
+     A*Create a database file in which the primary key is the province ID.
+     A          R CANADAPROV                TEXT('Canadian provinces')
+     A            PROVNUMBER     2S 0       COLHDG('PROVINCE' 'NUMBER')
+     A            PROVNAME      15          COLHDG('PROVINCE NAME')
+     A            POPULATION     8S 0       COLHDG('POPULATION')
+     A            YEARFOUND      4S 0       COLHDG('FOUNDATION' 'YEAR')
+     A            PREMIER       30A         COLHDG('PREMIER')
+     A            CAPITAL       15A         COLHDG('PROVINCIAL' 'CAPITAL CITY')
+     A            ADMISSION      4S 0       COLHDG('ADMISSION' 'IN FEDERATION')
+     A          K PROVNUMBER 
